@@ -1,0 +1,31 @@
+.container {
+    /* We will define the width, height and padding of the container */
+    /* The text-align to center */
+    width: 400px;
+    height: 60px;
+    padding: 32px;
+    display: inline-block;
+    text-align: center;
+
+    /* Use the animation `blink` to repeat infinitely for a time period of 2.5s*/
+    animation-duration: 2.5s;           
+    animation-iteration-count: infinite;
+    animation-direction: normal;        
+    animation-name: blink;              
+    
+    /* The same can be written shorthand as     */
+    /* --------------------------------------   */
+    /* animation: 2.5s infinite normal blink;   */
+}
+@keyframes blink {
+    0%, 100% {              /* Defines the properties at these frames */
+        background: rgb(19, 71, 139);
+        color: white;
+    }
+
+    50% {                   /* Defines the properties at these frames */
+        background: rgb(156, 11, 11);
+        color: rgba(219, 233, 20, 0.637);
+        border-radius: 48px;
+    }
+}
